@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 /**
  * main - prints all combinations of (0 - 9)
  *
@@ -17,5 +17,6 @@ int main(void)
 			putchar(32);
 		}
 	}
+	putchar(10);
 	return (0);
 }
