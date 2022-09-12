@@ -6,13 +6,17 @@
  */
 int main(void)
 {
-	int a;
+	int a, b;
 
 	for (a = 48; a < 58; a++)
 	{
-		putchar(a);
-		putchar(44);
-		putchar(32);
+		for (b = 48; b < 58; b++)
+		{
+			putchar(a);
+			putchar(b);
+			putchar(44);
+			putchar(32);
+		}
 	}
 	return (0);
 }
