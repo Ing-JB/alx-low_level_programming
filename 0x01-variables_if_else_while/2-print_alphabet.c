@@ -2,13 +2,13 @@
 /**
  * main - prints lowercase alphas
  *
- * Return- always 0 (success)
+ * Return: lower case alphabets (success)
  */
 int main(void)
 {
 	int a;
 
-	for (a = 97; a < 58; a++)
+	for (a = 97; a < 123; a++)
 	{
 		putchar(a);
 	}
