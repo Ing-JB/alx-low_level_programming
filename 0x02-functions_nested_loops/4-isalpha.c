@@ -14,7 +14,7 @@ int _isalpha(int c)
 	{
 		if (i == c)
 		{
-			if ((i > 90) || (i < 97))
+			if ((i > 90) && (i < 97))
 				continue;
 			else
 				return (1);
