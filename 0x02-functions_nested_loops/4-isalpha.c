@@ -11,25 +11,16 @@ int _isalpha(int c)
 	int i;
 
 	for (i = 65; i <= 123; i++)
-	{	
-		if ( i == c)
+	{
+		if (i == c)
 		{
-
-			if (i == 91)
-				_putchar(32);
-			else if (i == 92)
-				_putchar(32);
-	       		else if (i == 93)
-				_putchar(32);
-			else if (i == 94)
-				_putchar(32);
-			else if (i == 95)
-				_putchar(32);
-			else if (i == 96)
-				_putchar(32);
+			if ((i > 90) || (i < 97))
+				continue;
 			else
 				return (1);
-		} 	
+		}
+		else
+			continue;
 	}
 	return (0);
 }
