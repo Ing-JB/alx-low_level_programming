@@ -8,31 +8,22 @@
  * -1 if n is less than 0
  *
  */
-int print_sign(int i)
+int print_sign(int n)
 {
 
-	if (i > 0)
+	if (n > 0)
 	{
 		_putchar(43);
-		_putchar(44);
-		_putchar(32);
-		_putchar(49);
 		return (1);
 	}
-	else if (i == 0)
+	else if (n == 0)
 	{
-		_putchar(48);
-		_putchar(44);
-		_putchar(32);
 		_putchar(48);
 		return (0);
 	}
 	else
 	{
 		_putchar(45);
-		_putchar(44);
-		_putchar(32);
-		_putchar(47);
 		return (-1);
 	}
 }
