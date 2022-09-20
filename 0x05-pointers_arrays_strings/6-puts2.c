@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
- *_puts2 - prints a every other character
+ *puts2 - prints a every other character
  *@str: pointer to first character in string
  *
  * Return: Always 0
  */
-void  _puts2(char *str)
+void  puts2(char *str)
 {
 	int c;
 
