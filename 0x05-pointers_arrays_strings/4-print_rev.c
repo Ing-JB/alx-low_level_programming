@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-
+void _puts(char *s);
 /**
  *print_rev - prints string reversed
  *@s:pointer to first character
@@ -31,4 +31,23 @@ void print_rev(char *s)
 	r[c] = '\0';
 	_puts(r);
 
+}
+
+/**
+ *_puts - prints out string
+ *@s: pointer to string
+ *
+ * Return: Always 0
+ */
+void _puts(char *s)
+{
+	int c;
+
+	c = 0;
+	while (s[c] != '\0')
+	{
+		_putchar(s[c]);
+		c++;
+	}
+	_putchar('\n');
 }
