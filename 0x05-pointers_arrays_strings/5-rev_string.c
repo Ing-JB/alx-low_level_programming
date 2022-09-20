@@ -29,4 +29,23 @@ void rev_string(char *s)
 		beg++;
 		end--;
 	}
+
+}
+
+/**
+ *_strlen - determines string lenght
+ *@s :  pointer to string
+ *
+ * Return: Always 0
+ */
+int _strlen(char *s)
+{
+	int c;
+
+	c = 0;
+	while (s[c] != '\0')
+	{
+		c++;
+	}
+	return (c);
 }
