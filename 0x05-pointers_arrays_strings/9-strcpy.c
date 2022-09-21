@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-*strcpy - copies a strin into another
+*_strcpy - copies a strin into another
 *@src:pointer to source
 *@dest:pointer to destination
 *
