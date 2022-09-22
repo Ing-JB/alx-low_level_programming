@@ -12,7 +12,7 @@ char *leet(char *s)
 	int c;
 
 	c = 0;
-	while (s[c] != '\0')
+	while (s[c] != '\n')
 	{
 		if (s[c] >= 'a' || s[c] <= 'A')
 		{
@@ -34,6 +34,8 @@ char *leet(char *s)
 		{
 			s[c] = '1';
 		}
+		else
+			s[c] = s[c];
 		c++;
 	}
 	return (s);
