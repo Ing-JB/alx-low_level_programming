@@ -10,32 +10,21 @@
 char *leet(char *s)
 {
 	int c;
+	char Fnd[10] = {'a', 'e', 'o', 't', 'l', 'A', 'E', 'O', 'T', 'L'};
+	char Leet[5] = {'4', '3', '0', '7', '1'};
 
 	c = 0;
 	while (s[c] != '\n')
 	{
-		if (s[c] >= 'a' || s[c] <= 'A')
+		int j;
+
+		for (j = 0; j < 10; j++)
 		{
-			s[c] = '4';
+			if ((s[c] == Fnd[j]) || (s[c] == Fnd[j + 5]))
+			{
+				s[c] = Leet[j];
+			}
 		}
-		else if (s[c] == 'e' || s[c] == 'E')
-		{
-			s[c] = '3';
-		}
-		else if (s[c] == 'o' || s[c] == 'O')
-		{
-			s[c] = '0';
-		}
-		else if (s[c] == 't' || s[c] == 'T')
-		{
-			s[c] = '7';
-		}
-		else if (s[c] == 'l' || s[c] == 'L')
-		{
-			s[c] = '1';
-		}
-		else
-			s[c] = s[c];
 		c++;
 	}
 	return (s);
