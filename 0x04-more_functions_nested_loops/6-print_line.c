@@ -7,7 +7,11 @@
  */
 void print_line(int n)
 {
-	if (n > 0)
+	if (n <= 0)
+	{
+		_putchar(10);
+	}
+	else
 	{
 		int i;
 
@@ -17,6 +21,4 @@ void print_line(int n)
 		}
 		_putchar('\n');
 	}
-	else
-		_putchar('\n');
 }
