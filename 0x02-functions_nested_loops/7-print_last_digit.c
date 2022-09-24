@@ -1,5 +1,5 @@
 #include"main.h"
-
+#include <limits.h>
 /**
  * print_last_digit - print the last digit of a nmber
  *@n: integer to print last digit of
@@ -10,7 +10,7 @@ int print_last_digit(int n)
 {
 	int r;
 
-	if (n < 0)
+	if ((n < 0) || (n == INT_MIN))
 	n = -n;
 
 	r = (n % 10);
