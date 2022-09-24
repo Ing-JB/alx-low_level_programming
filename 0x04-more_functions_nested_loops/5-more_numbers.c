@@ -12,21 +12,20 @@ void more_numbers(void)
 
 	for (j = 0; j < 10; j++)
 	{
-		for (i = 48; i < 58; i++)
+		for (i = 0; i < 15; i++)
 		{
-			_putchar(i);
-		}
+			int d;
+			int r;
 
-		if (i >= 58)
-		{
-			int k;
-
-			for (k = 0; k < 5; k++)
+			d = (i / 10);
+			r = (i % 10);
+			if (d > 0)
 			{
-				_putchar(49);
-				_putchar(48 + k);
+				_putchar(d + '0');
 			}
+			_putchar(r + '0');
 		}
+
 		_putchar(10);
 	}
 }
