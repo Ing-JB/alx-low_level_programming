@@ -2,23 +2,33 @@
 #include <stdio.h>
 
 /**
-*_strchr- Locates a character in a string
+*_strspn- Locates a character in a string
 *@s:string to search
-*@c:character to searc
+*@accept:bytes to search
 *
 * Return: pointer to dest
 */
-char *_strchr(char *s, char c)
+unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i;
+	unsigned int j;
+	unsigned int bool;
 
+	i = 0;
 	while (*(s + i) != '\0')
 	{
-		if (*(s + i) == c)
+		bool = 1;
+		for (j = 0; *(accept + j) != '\0'; j++)
 		{
-			return (s + i);
+			if (*(s + i) == *(accept + j))
+			{
+				bool = 0;
+				break;
+			}
 		}
+		if (bool == 1)
+			break;
 		i++;
 	}
-	return ('\0');
+	return (i);
 }
